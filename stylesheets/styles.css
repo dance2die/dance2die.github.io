@@ -46,6 +46,7 @@ section {
 button {
   background-color: rgba(0,0,0,0);
   border: 1px solid #FFF;
+  cursor: pointer;
 }
 
 button i {
