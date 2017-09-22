@@ -121,6 +121,10 @@ footer > div a {
   font: 1.5em 'librebaskerville-regular', serif;
 }
 
+.nav {
+  padding: 0 !important;
+}
+
 .nav a {
   /* border: 1px solid #FFF;
   border-radius: 50%; */
