@@ -30,7 +30,7 @@ h5 {
 }
 
 header {
-  margin-top: 15%;
+  margin-top: 12%;
 }
 
 section {
@@ -47,6 +47,7 @@ button {
   background-color: rgba(0,0,0,0);
   border: 1px solid #FFF;
   cursor: pointer;
+  width: 137px;
 }
 
 button i {
@@ -91,14 +92,20 @@ footer > div a {
 
 .blog-github {
   display: flex;
+  margin-top: 10px;
 }
 
 .blog-github-content {
   margin: 5px 15px;
 }
 
+.blog-github-content-and {
+  font-size: 0.8em;
+}
+
 .whati {
   margin-bottom: -10px;
+  font-weight: bold;
 }
 
 .job {
@@ -109,7 +116,7 @@ footer > div a {
   Style job description
   Found via - https://omensah.github.io/resume/
  */
-.job h5 {
+ .job h5 {
   
   font: 1.5em 'librebaskerville-regular', serif;
 }
