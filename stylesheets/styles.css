@@ -105,6 +105,15 @@ footer > div a {
   text-align: center;
 }
 
+/* 
+  Style job description
+  Found via - https://omensah.github.io/resume/
+ */
+.job h5 {
+  
+  font: 1.5em 'librebaskerville-regular', serif;
+}
+
 .nav a {
   border: 1px solid #FFF;
   border-radius: 50%;
