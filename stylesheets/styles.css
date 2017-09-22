@@ -122,11 +122,12 @@ footer > div a {
 }
 
 .nav a {
-  border: 1px solid #FFF;
-  border-radius: 50%;
+  /* border: 1px solid #FFF;
+  border-radius: 50%; */
   padding: 5px 10px;
   color: #FFF;
   background-color: rgba(0,0,0,0);
+  font-size: 1.6em;
 }
 
 /* Override Moon CSS */
