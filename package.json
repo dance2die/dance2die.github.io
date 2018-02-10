@@ -1,0 +1,27 @@
+{
+  "name": "dance2die.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dance2die/dance2die.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dance2die/dance2die.github.io/issues"
+  },
+  "homepage": "https://github.com/dance2die/dance2die.github.io#readme",
+  "devDependencies": {
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "browser-sync": "^2.23.6",
+    "browser-sync-webpack-plugin": "^2.0.1",
+    "webpack": "^3.10.0"
+  }
+}
