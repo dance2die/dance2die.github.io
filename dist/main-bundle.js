@@ -73,15 +73,18 @@
 // Approximate jQuery's document.ready(...) equivalent
 // https://stackoverflow.com/a/21814964/4035
 document.addEventListener("DOMContentLoaded", function () {
-  // Set initial background holder
-  //   const holderURL = `assets/img/background_holder.svg`;
-  //   document.body.style.backgroundImage = `url(${holderURL})`;
-  //   document.body.classList.add("body__init");
-
   var image = new Image();
   image.onload = function () {
+    var background = document.querySelector("#background");
     setTimeout(function () {
-      document.querySelector("#background").classList.add("background__loaded");
+      // FAKE the pulsing effect.
+      // Firefox keep on flashing so let's fake the flicker as a pulsing effect.
+      background.style.opacity = 0;
+
+      setTimeout(function () {
+        background.classList.add("background__loaded");
+        background.style.opacity = 1;
+      }, 500);
     }, 500);
   };
 

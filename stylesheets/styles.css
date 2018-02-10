@@ -27,7 +27,8 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  opacity: 0.8;
+  opacity: 0.5;
+  transform: translate3d(0px,0px,1px);
 }
 
 #background.background__loaded {
@@ -36,25 +37,26 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   opacity: 1;
+  transform: translate3d(0px,0px,1px);
 }
-
 
 /* https://ihatetomatoes.net/how-to-create-css-glitch-effect/ */
 .glitch {
   /* -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%); */
   -webkit-transform: translate(0, 0);
-          transform: translate(0, 0);
+  transform: translate(0, 0);
 }
-.glitch:before, .glitch:after {
-  content: 'Hi. I am Sung Kim';
+.glitch:before,
+.glitch:after {
+  content: "Hi. I am Sung Kim";
   display: block;
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  opacity: .8;
+  opacity: 0.8;
 }
 .glitch:after {
   color: #f0f;
@@ -65,13 +67,14 @@ body {
   z-index: -1;
 }
 .glitch:hover:before {
-  -webkit-animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
-          animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+  -webkit-animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both
+    infinite;
+  animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
 }
 .glitch:hover:after {
-  animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+  animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both
+    infinite;
 }
-
 
 @-webkit-keyframes glitch {
   0% {
@@ -127,11 +130,6 @@ body {
   }
 }
 
-
-
-
-
-
 h1 {
   font-weight: bold;
   text-align: center;
@@ -147,7 +145,6 @@ header {
   /* room for glitch effect */
   padding: 5px;
 }
-
 
 section {
   display: flex;
@@ -198,7 +195,7 @@ footer > div a {
 @keyframes fadeIn {
   from {
     opacity: 0;
-    font-size: .01em;
+    font-size: 0.01em;
   }
   to {
     opacity: 1;
