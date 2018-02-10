@@ -27,10 +27,10 @@ module.exports = {
       port: 3000,
       files: [
         "./dist/*",
-        "**/*.css",
-        "**/*.html",
-        "**/*.htm",
-        "javascripts/*.js"
+        "./stylesheets/*.css",
+        "./**/*.html",
+        "./**/*.htm",
+        "./javascripts/*.js"
       ],
       server: { baseDir: ["."] }
     })
