@@ -6,7 +6,18 @@ module.exports = {
     main: "./js/index.js"
   },
   output: {
-    filename: "[name]-bundle.js"
+    filename: "./dist/[name]-bundle.js"
+  },
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /(node_modules|bower_components)/,
+        use: {
+          loader: "babel-loader"
+        }
+      }
+    ]
   },
   watch: true,
   plugins: [
