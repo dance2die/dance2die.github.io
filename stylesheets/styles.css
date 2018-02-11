@@ -17,17 +17,12 @@ body {
   transition: all 1s ease-in-out;
 }
 
-body.background__from {
+body.background__holder {
   background: url("../assets/img/background_holder.svg");
   opacity: 0.5;
 }
 
-body.background__to {
-  /* background: url("https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?crop=entropy&dpr=2&fit=crop&fm=jpg&h=750&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1450"); */
-  opacity: 1;
-}
-
-body.background_meta {
+body.background__meta {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
