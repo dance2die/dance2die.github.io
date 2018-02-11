@@ -1,15 +1,10 @@
 body {
   margin: 0;
   padding: 0;
-}
-
-#background {
   box-sizing: border-box;
   width: 100%;
   height: 100%;
 
-  margin: 0;
-  padding: 0;
   color: #fff;
   font-family: "Hans Kendrick", sans-serif;
 
@@ -22,22 +17,20 @@ body {
   transition: all 1s ease-in-out;
 }
 
-#background.background__init {
+body.background__from {
   background: url("../assets/img/background_holder.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
   opacity: 0.5;
-  transform: translate3d(0px,0px,1px);
 }
 
-#background.background__loaded {
-  background: url("https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?crop=entropy&dpr=2&fit=crop&fm=jpg&h=750&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1450");
+body.background__to {
+  /* background: url("https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?crop=entropy&dpr=2&fit=crop&fm=jpg&h=750&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1450"); */
+  opacity: 1;
+}
+
+body.background_meta {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  opacity: 1;
-  transform: translate3d(0px,0px,1px);
 }
 
 /* https://ihatetomatoes.net/how-to-create-css-glitch-effect/ */
