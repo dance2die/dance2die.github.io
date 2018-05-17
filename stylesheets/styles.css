@@ -28,7 +28,7 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   opacity: 0.5;
-  transform: translate3d(0px,0px,1px);
+  transform: translate3d(0px, 0px, 1px);
 }
 
 #background.background__loaded {
@@ -37,97 +37,7 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   opacity: 1;
-  transform: translate3d(0px,0px,1px);
-}
-
-/* https://ihatetomatoes.net/how-to-create-css-glitch-effect/ */
-.glitch {
-  /* -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%); */
-  -webkit-transform: translate(0, 0);
-  transform: translate(0, 0);
-}
-.glitch:before,
-.glitch:after {
-  content: "Hi. I am Sung Kim";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0.8;
-}
-.glitch:after {
-  color: #f0f;
-  z-index: -2;
-}
-.glitch:before {
-  color: #0ff;
-  z-index: -1;
-}
-.glitch:hover:before {
-  -webkit-animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both
-    infinite;
-  animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
-}
-.glitch:hover:after {
-  animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both
-    infinite;
-}
-
-@-webkit-keyframes glitch {
-  0% {
-    -webkit-transform: translate(0);
-    transform: translate(0);
-  }
-  20% {
-    -webkit-transform: translate(-5px, 5px);
-    transform: translate(-5px, 5px);
-  }
-  40% {
-    -webkit-transform: translate(-5px, -5px);
-    transform: translate(-5px, -5px);
-  }
-  60% {
-    -webkit-transform: translate(5px, 5px);
-    transform: translate(5px, 5px);
-  }
-  80% {
-    -webkit-transform: translate(5px, -5px);
-    transform: translate(5px, -5px);
-  }
-  to {
-    -webkit-transform: translate(0);
-    transform: translate(0);
-  }
-}
-
-@keyframes glitch {
-  0% {
-    -webkit-transform: translate(0);
-    transform: translate(0);
-  }
-  20% {
-    -webkit-transform: translate(-5px, 5px);
-    transform: translate(-5px, 5px);
-  }
-  40% {
-    -webkit-transform: translate(-5px, -5px);
-    transform: translate(-5px, -5px);
-  }
-  60% {
-    -webkit-transform: translate(5px, 5px);
-    transform: translate(5px, 5px);
-  }
-  80% {
-    -webkit-transform: translate(5px, -5px);
-    transform: translate(5px, -5px);
-  }
-  to {
-    -webkit-transform: translate(0);
-    transform: translate(0);
-  }
+  transform: translate3d(0px, 0px, 1px);
 }
 
 h1 {
@@ -270,4 +180,64 @@ i:hover {
   text-shadow: 0 0 10px rgba(255, 255, 255, 1), 0 0 20px rgba(255, 255, 255, 1),
     0 0 30px rgba(255, 255, 255, 1), 0 0 40px #00ffff, 0 0 70px #00ffff,
     0 0 80px #00ffff, 0 0 100px #00ffff;
+}
+
+/* https://github.com/tholman/github-corners/blob/master/css/styles.css */
+.github-corner {
+  /* Move it up transparent layer */
+  z-index: 1;
+}
+.github-corner:hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out;
+}
+
+@keyframes octocat-wave {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  20%,
+  60% {
+    transform: rotate(-25deg);
+  }
+  40%,
+  80% {
+    transform: rotate(10deg);
+  }
+}
+
+@media (max-width: 500px) {
+  .github-corner:hover .octo-arm {
+    animation: none;
+  }
+  .github-corner .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
+  }
+}
+</style > <style > .github-corner:hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out;
+}
+
+@keyframes octocat-wave {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  20%,
+  60% {
+    transform: rotate(-25deg);
+  }
+  40%,
+  80% {
+    transform: rotate(10deg);
+  }
+}
+
+@media (max-width: 500px) {
+  .github-corner:hover .octo-arm {
+    animation: none;
+  }
+  .github-corner .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
+  }
 }

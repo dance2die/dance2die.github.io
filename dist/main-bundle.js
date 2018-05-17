@@ -76,15 +76,19 @@ document.addEventListener("DOMContentLoaded", function () {
   var image = new Image();
   image.onload = function () {
     var background = document.querySelector("#background");
-    setTimeout(function () {
-      // FAKE the pulsing effect.
-      // Firefox keep on flashing so let's fake the flicker as a pulsing effect.
-      background.style.opacity = 0;
+    // setTimeout(() => {
+    //   // FAKE the pulsing effect.
+    //   // Firefox keep on flashing so let's fake the flicker as a pulsing effect.
+    //   background.style.opacity = 0;
 
-      setTimeout(function () {
-        background.classList.add("background__loaded");
-        background.style.opacity = 1;
-      }, 500);
+    //   setTimeout(() => {
+    //     background.classList.add("background__loaded");
+    //     background.style.opacity = 1;
+    //   }, 500);
+    // }, 500);
+    setTimeout(function () {
+      background.classList.add("background__loaded");
+      background.style.opacity = 1;
     }, 500);
   };
 
